@@ -12,8 +12,10 @@ void setup()
 // the loop function runs over and over again forever
 void loop()
 {
-    digitalwrite(13,HIGH);
-    delay(2000);
-    digitalwrite(13,LOW);
-    delay(2000);
+    static int potPosition;
+    potPosition=analogRead(A0);
+    digitalWrite(13,HIGH);
+    delay(potPosition);
+    digitalWrite(13,LOW);
+    delay(potPosition);
 }
