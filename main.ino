@@ -6,14 +6,14 @@
 // the setup function runs once when you press reset or power the board
 void setup()
 {
-    pinMode(13, OUTPUT);
+    pinMode(8, OUTPUT);
 }
 
 // the loop function runs over and over again forever
 void loop()
 {
-    digitalwrite(13,HIGH);
-    delay(2000);
-    digitalwrite(13,LOW);
-    delay(2000);
+    digitalWrite(8,HIGH);
+    delay(4000);
+    digitalWrite(8,LOW);
+    delay(4000);
 }
